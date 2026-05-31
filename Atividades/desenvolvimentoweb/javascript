@@ -1,1 +1,62 @@
+console.log("meu primeiro script");
+let nome ="Maria";
+let idade =  20;
+let cidade = "Belo Horizonte";
+console.log(nome,idade,cidade);
+
+let paragrafo = document.getElementByld("mensagem");
+paragrafo.innerText="javaScript alterou este texto";
+
+let titulo = document.getElementById("título");
+titulo.innerText = "Luiza";
+titulo.style.color = "blue";
+
+function saudar() {
+    console.log("Olá! o botão foi clicado")
+    let resposta = document.getElementById("resposta");
+    resposta.innerText = "Voce clicou  no botão";
+}
+
+function mostrarNome() {
+    let nome = document.getElementById("nomeUsuario").value;
+    document.getElementById("resultado").innerText = "Olá, " + nome + "!";
+}
+
+function calcular() {
+    
+    let n1 = Number(document.getElementById("numero1").value);
+    let n2 = Number(document.getElementById("numero2").value);
+    
+   
+    let soma = n1 + n2;
+    
+   
+    document.getElementById("resultadoCalculo").innerText = "Resultado: " + soma;
+}
+
+// --- EXERCÍCIO 10: Funções da Calculadora ---
+
+function calcularSoma() {
+    let n1 = Number(document.getElementById("numero1").value);
+    let n2 = Number(document.getElementById("numero2").value);
+    document.getElementById("resultadoCalculo").innerText = "Resultado: " + (n1 + n2);
+}
+
+function calcularSubtracao() {
+    let n1 = Number(document.getElementById("numero1").value);
+    let n2 = Number(document.getElementById("numero2").value);
+    document.getElementById("resultadoCalculo").innerText = "Resultado: " + (n1 - n2);
+}
+
+function calcularMultiplicacao() {
+    let n1 = Number(document.getElementById("numero1").value);
+    let n2 = Number(document.getElementById("numero2").value);
+    document.getElementById("resultadoCalculo").innerText = "Resultado: " + (n1 * n2);
+}
+
+function calcularDivisao() {
+    let n1 = Number(document.getElementById("numero1").value);
+    let n2 = Number(document.getElementById("numero2").value);
+    document.getElementById("resultadoCalculo").innerText = "Resultado: " + (n1 / n2);
+}
 
