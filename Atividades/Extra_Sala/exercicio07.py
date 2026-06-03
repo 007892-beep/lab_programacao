@@ -6,7 +6,7 @@ pares = []
 impares = []
 
 while len(pares) + len(impares) < 10: #enquanto eu n tiver 10 numeros guardados,continue perguntando
-    num = int(input(f"Digite o {len(pares)}"))
+    num = int(input(f"Digite o {len(pares) + len(impares) + 1}º número: "))
 
     #verifica se o numero ja existai em qualquer umas das listas
     if num in pares or num in impares:
